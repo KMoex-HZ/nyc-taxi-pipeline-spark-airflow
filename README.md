@@ -26,6 +26,12 @@ This pipeline is engineered to handle significant data workloads, demonstrating 
 
 The pipeline implements a **Lakehouse-style architecture** to ensure scalability and data integrity:
 
+<p align="center">
+  <img src="assets/architecture-nyc.png" width="700" alt="NYC Taxi Pipeline Architecture">
+  <br>
+  <em>Figure 1: End-to-End Architecture - Spark Distributed Processing & Airflow Orchestration.</em>
+</p>
+
 1.  **Ingestion Layer (Data Lake):** Automatic extraction of raw Parquet files from the source to **MinIO** (S3-compatible object storage).
 2.  **Processing Layer (Distributed Compute):** **Apache Spark** performs heavy-lifting transformations, cleaning, and aggregation on the cluster.
 3.  **Serving Layer (Data Warehouse):** Processed insights are loaded into **PostgreSQL** for downstream analytics and BI consumption.
@@ -34,7 +40,7 @@ The pipeline implements a **Lakehouse-style architecture** to ensure scalability
 <p align="center">
   <img src="assets/airflow_graph.png" width="800" title="Airflow DAG Workflow">
   <br>
-  <em>Figure 1: The Directed Acyclic Graph (DAG) visualizing the dependency chain.</em>
+  <em>Figure 2: The Directed Acyclic Graph (DAG) visualizing the dependency chain.</em>
 </p>
 
 ---
@@ -110,7 +116,7 @@ _Wait for a few minutes for the Airflow Webserver to initialize._
 <p align="center">
   <img src="assets/data_result.png" width="600" title="Data Warehouse Output">
   <br>
-  <em>Figure 2: Sample output showing aggregated trip metrics in PostgreSQL.</em>
+  <em>Figure 3: Sample output showing aggregated trip metrics in PostgreSQL.</em>
 </p>
 
 ---
