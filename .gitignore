@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+*.env
+
+# Airflow
+logs/
+airflow-webserver.pid
+airflow-scheduler.pid
+airflow-worker.pid
+airflow.db
+unittests.cfg
+
+# Docker & OS
+.DS_Store
+.docker/
+db_data/
+pgdata/
+minio_data/
+postgres_data/
+
+# Spark / IDE
+.idea/
+.vscode/
+*.swp
+out/
+target/
+

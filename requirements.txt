@@ -1,0 +1,14 @@
+# Orchestrator
+apache-airflow==2.7.1
+
+# Data Ingestion & Storage
+minio
+requests
+psycopg2-binary
+sqlalchemy
+
+# Data Processing
+pyspark==3.5.0
+
+# Quality Assurance
+great-expectations
