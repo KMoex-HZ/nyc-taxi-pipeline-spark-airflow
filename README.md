@@ -120,8 +120,15 @@ _Wait for a few minutes for the Airflow Webserver to initialize._
 - **CI/CD Integration:** Implement **GitHub Actions** to automate linting (Ruff/Flake8) and testing on every pull request.
 - **Cloud Migration:** Refactor the infrastructure to run on **AWS EMR** (Spark) and **Amazon S3** for production scalability.
 - **Dashboarding:** Connect **Metabase** or **Superset** to PostgreSQL for real-time visualization of taxi revenue trends.
-
 ---
+
+## ⚠️ Production Roadmap & Considerations
+
+> While this project demonstrates a functional Data Lakehouse pipeline, the following improvements are required for a production-grade deployment:
+> 1. **Security:** Externalize database credentials using *Airflow Connections* or *HashiCorp Vault* instead of hardcoded strings.
+> 2. **Performance:** Replace Pandas-based quality checks with *Great Expectations Spark Execution Engine* to avoid memory bottlenecks on large datasets.
+> 3. **Infrastructure:** Migrate from Docker-in-Docker (BashOperator) to native *SparkSubmitOperator* or cloud-managed providers (e.g., AWS EMR).
+> 4. **Ingestion:** Implement streaming ingestion/chunking for files larger than system memory.
 
 **Author:** [Caelan Zhou](https://github.com/KMoex-HZ)
 
