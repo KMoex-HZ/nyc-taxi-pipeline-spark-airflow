@@ -14,13 +14,12 @@ This project demonstrates **Modern Data Stack (MDS)** best practices by implemen
 
 ## 📊 Data Scale & Performance Highlights
 
-Pipeline ini dirancang untuk menangani beban kerja data yang signifikan, membuktikan efisiensi **Spark Distributed Computing**:
+This pipeline is engineered to handle significant data workloads, demonstrating the efficiency of **Spark Distributed Computing**:
 
-* **Dataset Source:** NYC Yellow Taxi Trip Records (Januari 2024).
-* **Total Data Volume:** Mengolah lebih dari **2,96 Juta baris data** mentah secara sekaligus.
-* **Transformation Logic:** Melakukan pembersihan data (*filtering invalid trips*), penambahan kolom temporal (*feature engineering*), dan agregasi metrik finansial.
-* **Performance:** Berkat arsitektur **Spark Master-Worker**, pemrosesan jutaan baris data ini diselesaikan secara paralel dalam waktu singkat, jauh lebih cepat dibandingkan pemrosesan tradisional berbasis Pandas.
-
+* **Dataset Source:** NYC Yellow Taxi Trip Records (January 2024).
+* **Total Data Volume:** Processed over **2.96 Million raw records** in a single run.
+* **Transformation Logic:** High-speed data cleaning (filtering invalid trips), temporal feature engineering, and complex financial metric aggregations.
+* **Performance:** Leveraged a **Spark Master-Worker cluster architecture** to execute transformations in parallel, significantly reducing processing latency compared to traditional single-node Pandas execution.
 ---
 
 ## 🏗️ System Architecture
