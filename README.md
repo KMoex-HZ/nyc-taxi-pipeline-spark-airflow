@@ -12,6 +12,17 @@ This project demonstrates **Modern Data Stack (MDS)** best practices by implemen
 
 ---
 
+## 📊 Data Scale & Performance Highlights
+
+Pipeline ini dirancang untuk menangani beban kerja data yang signifikan, membuktikan efisiensi **Spark Distributed Computing**:
+
+* **Dataset Source:** NYC Yellow Taxi Trip Records (Januari 2024).
+* **Total Data Volume:** Mengolah lebih dari **2,96 Juta baris data** mentah secara sekaligus.
+* **Transformation Logic:** Melakukan pembersihan data (*filtering invalid trips*), penambahan kolom temporal (*feature engineering*), dan agregasi metrik finansial.
+* **Performance:** Berkat arsitektur **Spark Master-Worker**, pemrosesan jutaan baris data ini diselesaikan secara paralel dalam waktu singkat, jauh lebih cepat dibandingkan pemrosesan tradisional berbasis Pandas.
+
+---
+
 ## 🏗️ System Architecture
 
 The pipeline implements a **Lakehouse-style architecture** to ensure scalability and data integrity:
@@ -69,7 +80,7 @@ Follow these steps to deploy the data engineering pipeline locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/nyc-taxi-pipeline.git](https://github.com/your-username/nyc-taxi-pipeline.git)
+git clone https://github.com/KMoex-HZ/nyc-taxi-pipeline-spark-airflow.git
 cd nyc-taxi-pipeline
 
 ```
